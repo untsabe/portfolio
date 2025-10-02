@@ -2,7 +2,7 @@ import { ArrowUpRight } from "lucide-react"
 
 const projects = [
   {
-    title: "Document Explainer APP",
+    title: "Document Explainer App",
     description:
       "Extracted text from documents using Tesseract OCR. Users highlight complex words to get simplified explanations via OpenAI API.",
     image: "/lumora.png",
