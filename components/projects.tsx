@@ -1,11 +1,11 @@
 import { ArrowUpRight } from "lucide-react"
-import Image from "next/image"
+
 const projects = [
   {
     title: "Document Explainer API",
     description:
       "Extracted text from documents using Tesseract OCR. Users highlight complex words to get simplified explanations via OpenAI API.",
-    image: "/lumora.png", // replace with your actual image path
+    image: "/lumora.png",
     technologies: ["Python", "Tesseract OCR", "OpenAI API", "React-Native"],
     url: "#",
   },
@@ -13,15 +13,15 @@ const projects = [
     title: "Mood-Based Music Web App",
     description:
       "Built a full-stack app suggesting music based on emotion detected via facial recognition.",
-    image: "/moodemo.png", // replace with your actual image path
-    technologies: ["Node.js", "HTML" ,"CSS", "JavaScript", "MySQL"],
+    image: "/moodemo.png",
+    technologies: ["Node.js", "HTML", "CSS", "JavaScript", "MySQL"],
     url: "#",
   },
   {
     title: "School Bus Tracking App",
     description:
       "Real-time tracking for students/parents with backend integration using Java EE and GPS APIs.",
-    image: "/task-management-app.png", // replace with your actual image path
+    image: "/task-management-app.png",
     technologies: ["Java EE", "GPS APIs"],
     url: "#",
   },
@@ -37,8 +37,8 @@ export function Projects() {
             <div key={index} className="group relative grid gap-4 transition-all sm:grid-cols-8 sm:gap-8">
               <div className="z-10 sm:col-span-3">
                 <div className="overflow-hidden rounded-lg border border-border bg-card transition-all group-hover:border-accent/50">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
+                  <img
+                    src={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}${project.image}`}
                     alt={project.title}
                     width={600}
                     height={400}
