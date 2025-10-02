@@ -38,9 +38,7 @@ export function Navigation() {
       <div>
        <div className="mb-12 flex flex-col items-center text-center">
     {/* Profile Photo */}
-    <img
-      src="/profile.png" // replace with your actual photo path
-      alt=""
+    <img src={`${process.env.NODE_ENV === 'production' ? '/portfolio' : ''}/profile.png`} alt="Profile" 
       className="w-32 h-32 rounded-full object-cover mb-6 shadow-lg"
     />
 
