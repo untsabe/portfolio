@@ -76,31 +76,31 @@ export function Navigation() {
         </div>
 
         <ul className="space-y-4">
-          {navItems.map(({ id, label }) => (
-            <li key={id}>
-              <a
-                href={`#${id}`}
-                onClick={() => handleNavClick(id)}
-                className="group flex items-center gap-4 text-sm font-medium uppercase tracking-widest transition-all"
-              >
-                <span
-                  className={`h-px transition-all ${
-                    activeSection === id
-                      ? "w-16 bg-accent"
-                      : "w-8 bg-foreground group-hover:w-16 group-hover:bg-accent"
-                  }`}
-                />
-                <span
-                  className={`transition-colors ${
-                    activeSection === id ? "text-accent" : "text-muted-foreground group-hover:text-accent"
-                  }`}
-                >
-                  {label}
-                </span>
-              </a>
-            </li>
-          ))}
-        </ul>
+  {navItems.map(({ id, label }) => (
+    <li key={id}>
+      <a
+        href={`#${id}`}
+        onClick={() => handleNavClick(id)}
+        className="group flex items-center gap-4 text-sm font-medium uppercase tracking-widest transition-colors"
+      >
+        <span
+          className={`h-px ${
+            activeSection === id
+              ? "w-16 bg-foreground"
+              : "w-8 bg-muted-foreground group-hover:bg-foreground"
+          }`}
+        />
+        <span
+          className={`${
+            activeSection === id ? "text-foreground" : "text-muted-foreground group-hover:text-foreground"
+          }`}
+        >
+          {label}
+        </span>
+      </a>
+    </li>
+  ))}
+</ul>
       </div>
 
       <div className="flex gap-6">
@@ -114,7 +114,7 @@ export function Navigation() {
           <Github className="h-6 w-6" />
         </a>
         <a
-          href="https://linkedin.com"
+          href="www.linkedin.com/in/umenelisi-shadrack-ntsabe-6716a1281"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground transition-colors hover:text-accent"
@@ -132,7 +132,7 @@ export function Navigation() {
           <Twitter className="h-6 w-6" />
         </a>
         <a
-          href="mailto:your.email@example.com"
+          href="mailto:untsabe@gmail.com"
           className="text-foreground transition-colors hover:text-accent"
           aria-label="Email"
         >
@@ -205,8 +205,8 @@ export function Navigation() {
                   <Github className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://linkedin.com"
-                  target="_blank"
+                  href="www.linkedin.com/in/umenelisi-shadrack-ntsabe-6716a1281"
+                 
                   rel="noopener noreferrer"
                   className="text-foreground transition-colors hover:text-accent"
                   aria-label="LinkedIn"
@@ -223,7 +223,7 @@ export function Navigation() {
                   <Twitter className="h-5 w-5" />
                 </a>
                 <a
-                  href="mailto:your.email@example.com"
+                  href="mailto:untsabe@gmail.com"
                   className="text-foreground transition-colors hover:text-accent"
                   aria-label="Email"
                 >
