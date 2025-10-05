@@ -105,7 +105,7 @@ export function Navigation() {
 
       <div className="flex gap-6">
         <a
-          href="https://github.com"
+          href="https://github.com/untsabe"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground transition-colors hover:text-accent"
@@ -114,7 +114,7 @@ export function Navigation() {
           <Github className="h-6 w-6" />
         </a>
         <a
-          href="www.linkedin.com/in/umenelisi-shadrack-ntsabe-6716a1281"
+          href="https://www.linkedin.com/in/umenelisi-shadrack-ntsabe-6716a1281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           target="_blank"
           rel="noopener noreferrer"
           className="text-foreground transition-colors hover:text-accent"
